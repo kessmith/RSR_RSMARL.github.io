@@ -12,25 +12,17 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -53,29 +45,11 @@
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="[AUTHOR_HOMEPAGE_URL]">
-      <span class="icon">
+        <span class="icon">
           <i class="fas fa-home"></i>
-      </span>
+        </span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="[RELATED_PROJECT_1_URL]">
-            [Related Project 1]
-          </a>
-          <a class="navbar-item" href="[RELATED_PROJECT_2_URL]">
-            [Related Project 2]
-          </a>
-          <a class="navbar-item" href="[RELATED_PROJECT_3_URL]">
-            [Related Project 3]
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
 
@@ -117,62 +91,51 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- PDF Link -->
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2506.00982"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- arXiv Link -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2506.00982"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                    <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              {% comment %} <span class="link-block">
-                <a href="[YOUTUBE_VIDEO_URL]"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> {% endcomment %}
-              <!-- Code Link. -->
+              <!-- Code Link -->
               <span class="link-block">
                 <a href="https://github.com/kessmith/RSR-RSMARL"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TEASER: Replace with your teaser video. Alternatively, swap the <video> for
-           an <img> tag pointing to your overview/framework figure. -->
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
+      <video id="teaser" autoplay muted loop playsinline width="100%">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">RSR-RSMARL</span> enables zero-shot transfer of
@@ -185,51 +148,10 @@
 </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- CAROUSEL: Replace each video src with your hardware or simulation result clips.
-             Add or remove <div class="item"> blocks to match your number of scenarios. -->
-        <div class="item item-scenario1">
-          <video poster="" id="scenario1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[SCENARIO_1].mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-scenario2">
-          <video poster="" id="scenario2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[SCENARIO_2].mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-scenario3">
-          <video poster="" id="scenario3" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[SCENARIO_3].mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-scenario4">
-          <video poster="" id="scenario4" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[SCENARIO_4].mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-scenario5">
-          <video poster="" id="scenario5" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[SCENARIO_5].mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+
+    <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -266,20 +188,8 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+    <!--/ Abstract -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <!-- VIDEO: Replace [YOUTUBE_VIDEO_ID] with your actual YouTube video ID -->
-          <iframe src="https://www.youtube.com/embed/[YOUTUBE_VIDEO_ID]?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -287,97 +197,71 @@
 <section class="section">
   <div class="container is-max-desktop">
 
+    <!-- Robust Policy Training & CBF Safety Shield -->
     <div class="columns is-centered">
-
-      <!-- Robust Policy Training. -->
-      <div class="column">
+      <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Robust Policy Training</h2>
-          <p>
-            RSR-RSMARL trains MARL policies in simulation using a robust training algorithm
-            that explicitly accounts for the sim-to-real gap. State and action representations
-            are designed to reflect real system complexities — including V2V-shared state
-            information — enabling reliable zero-shot transfer to physical hardware without
-            any fine-tuning.
-          </p>
-          <!-- FIGURE: Replace src with your robust training / simulation training figure.
-               This could be a learning curve, policy architecture diagram, or training setup. -->
-          <video id="robust-training" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/Sped_Up_CARLA.mp4"
-                    type="video/mp4">
+          <h2 class="title is-3">Robust Policy Training with CBF Safety Shield</h2>
+          <div class="columns">
+            <div class="column">
+              <p>
+                RSR-RSMARL trains MARL policies in simulation using a robust training algorithm
+                that explicitly accounts for the sim-to-real gap. State and action representations
+                are designed to reflect real system complexities — including V2V-shared state
+                information — enabling reliable zero-shot transfer to physical hardware without
+                any fine-tuning.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                A modular safety shield using Control Barrier Functions (CBFs) is deployed
+                on each agent independently, providing formal safety guarantees at runtime
+                in both simulation and on hardware — without modifying the MARL policy.
+                This decoupled design enables scalable deployment across varying numbers
+                of agents and configurations.
+              </p>
+            </div>
+          </div>
+          <video id="robust-training" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/Sped_Up_CARLA.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      <!--/ Robust Policy Training. -->
-
-      <!-- CBF Safety Shield. -->
-      <div class="column">
-        <h2 class="title is-3">CBF Safety Shield</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              A modular safety shield using Control Barrier Functions (CBFs) is deployed
-              on each agent independently, providing formal safety guarantees at runtime
-              in both simulation and on hardware — without modifying the MARL policy.
-              This decoupled design enables scalable deployment across varying numbers
-              of agents and configurations.
-            </p>
-            <!-- FIGURE: Replace src with your CBF safety shield figure or hardware safety demo video -->
-            <video id="cbf-video" controls playsinline height="100%">
-              <source src="./static/videos/[CBF_DEMO_VIDEO].mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-      <!--/ CBF Safety Shield. -->
-
     </div>
+    <!--/ Robust Policy Training & CBF Safety Shield -->
 
-    <!-- Real-Sim-Real Transfer. -->
+
+    <!-- Real-Sim-Real Transfer -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Real-Sim-Real (RSR) Transfer</h2>
 
-        <!-- Sim vs. Real Comparison. -->
-        <h3 class="title is-4">Simulation to Hardware Comparison</h3>
+        <!-- RSR-RSMARL Architecture Overview -->
+        <h3 class="title is-4">RSR-RSMARL Framework Overview</h3>
         <div class="content has-text-justified">
           <p>
             The RSR pipeline begins with state and action representation design that captures
             real-world complexities, proceeds through robust sim training, and deploys
-            directly to hardware with no additional fine-tuning. Use the slider to compare
-            policy behavior in simulation against zero-shot hardware execution.
+            directly to hardware with no additional fine-tuning. The framework integrates
+            latency-aware state and action space design, multi-agent simulation training,
+            and a modular safety shield with pluggable low-level control backends for
+            zero-shot real-world deployment.
           </p>
         </div>
-        <!-- SLIDER: Replace the two image srcs with your sim frame and hardware frame.
-             If you prefer a static side-by-side figure, remove this block and use an <img> instead. -->
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/policy_decision_pipeline_v5.png"
-                 class="interpolation-image"
-                 alt="Simulated environment frame."/>
-            <p>Simulation</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/rsr_framework_overview_v7.jpg"
-                 class="interpolation-image"
-                 alt="Hardware deployment frame."/>
-            <p class="is-bold">Hardware</p>
+        <div class="columns is-centered">
+          <div class="column is-full has-text-centered">
+            <img src="./static/images/rsr_framwork_overview_v7.png"
+                 alt="RSR-RSMARL framework architecture diagram showing the full pipeline from real-world latency measurements and state/action space design through simulation training to hardware deployment."
+                 style="max-width: 100%; height: auto;"/>
+            <p class="is-size-6 has-text-grey mt-2">
+              Figure: RSR-RSMARL pipeline — from latency-aware design and sim training to zero-shot hardware deployment.
+            </p>
           </div>
         </div>
         <br/>
-        <!--/ Sim vs. Real Comparison. -->
+        <!--/ RSR-RSMARL Architecture Overview -->
 
-        <!-- Hardware Demo. -->
+        <!-- Hardware Demo -->
         <h3 class="title is-4">Hardware Deployment on 1/10th-Scale Vehicles</h3>
         <div class="content has-text-justified">
           <p>
@@ -388,36 +272,27 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <!-- VIDEO: Replace with your primary hardware demonstration video -->
-          <video id="hardware-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/robo_demonstration.mp4"
-                    type="video/mp4">
+          <video id="hardware-video" controls muted preload playsinline width="75%">
+            <source src="./static/videos/robo_demonstration.mp4" type="video/mp4">
           </video>
         </div>
-        <!--/ Hardware Demo. -->
+        <!--/ Hardware Demo -->
 
       </div>
     </div>
-    <!--/ Real-Sim-Real Transfer. -->
+    <!--/ Real-Sim-Real Transfer -->
 
 
-    <!-- Related Links. -->
+    <!-- Related Links -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
-
         <div class="content has-text-justified">
           <p>
             There is a growing body of work on safe MARL, sim-to-real transfer, and
             multi-agent autonomous driving that is concurrent with or foundational to this paper.
           </p>
           <p>
-            <!-- RELATED WORKS: Replace each href and title with an actual paper URL and name -->
             <a href="https://ieeexplore.ieee.org/abstract/document/11128447">[Related Work 1: Robust MARL / Sim-to-Real]</a>
             introduces ideas related to our robust policy training formulation.
           </p>
@@ -429,16 +304,16 @@
           </p>
           <p>
             Some works apply CBFs for safety in single-agent or decentralized settings, such as
-            <a href="https://ieeexplore.ieee.org/abstract/document/11128447">[Related Work 4]</a>,
+            <a href="https://ieeexplore.ieee.org/abstract/document/11128447">[Related Work 4]</a> and
             <a href="https://arxiv.org/abs/2103.12553">[Related Work 5]</a>.
-             However, our work is among the first to demonstrate a modular CBF safety shield
-             in a multi-agent setting with communication, and to show zero-shot transfer of
-             a CBF-shielded MARL policy to hardware.
+            However, our work is among the first to demonstrate a modular CBF safety shield
+            in a multi-agent setting with communication, and to show zero-shot transfer of
+            a CBF-shielded MARL policy to hardware.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Related Links. -->
+    <!--/ Related Links -->
 
   </div>
 </section>
@@ -447,7 +322,6 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <!-- BIBTEX: Replace venue with the correct conference/journal once published -->
     <pre><code>@article{smith2025rsrrsmarl,
   author    = {Smith, Keshawn and Ahmad, H M Sabbir and Sabouni, Ehsan and Li, Wenchao
                and Han, Song and Zhang, Zhili and Mondal, Mainak and Miao, Fei},
@@ -463,28 +337,21 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2506.00982">
+      <a class="icon-link" href="https://arxiv.org/pdf/2506.00982">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="[GITHUB_REPO_URL]" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/kessmith/RSR-RSMARL">
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template adapted from
+            <a href="https://nerfies.github.io">Nerfies</a>,
+            licensed under
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
           </p>
         </div>
       </div>
