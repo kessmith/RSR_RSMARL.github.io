@@ -90,21 +90,20 @@
             <span class="author-block">
               <a href="[KESHAWN_SMITH_URL]">Keshawn Smith</a><sup>1</sup>,</span>
             <span class="author-block">
+              <a href="[ZHILI_ZHANG_URL]">Zhili Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
               <a href="[SABBIR_AHMAD_URL]">H M Sabbir Ahmad</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="[EHSAN_SABOUNI_URL]">Ehsan Sabouni</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="[WENCHAO_LI_URL]">Wenchao Li</a><sup>2</sup>,
+              <a href="[MAINAK_MONDAL_URL]">Mainak Mondal</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="[SONG_HAN_URL]">Song Han</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="[ZHILI_ZHANG_URL]">Zhili Zhang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="[MAINAK_MONDAL_URL]">Mainak Mondal</a><sup>1</sup>,
+              <a href="[WENCHAO_LI_URL]">Wenchao Li</a><sup>2</sup>,
             </span>
             <span class="author-block">
               <a href="[FEI_MIAO_URL]">Fei Miao</a><sup>1</sup>
@@ -138,7 +137,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              {% comment %} <span class="link-block">
                 <a href="[YOUTUBE_VIDEO_URL]"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,10 +145,10 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> {% endcomment %}
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="[GITHUB_REPO_URL]"
+                <a href="https://github.com/kessmith/RSR-RSMARL"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -304,7 +303,7 @@
           <!-- FIGURE: Replace src with your robust training / simulation training figure.
                This could be a learning curve, policy architecture diagram, or training setup. -->
           <video id="robust-training" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/[ROBUST_TRAINING_VIDEO].mp4"
+            <source src="./static/videos/Sped_Up_CARLA.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -355,7 +354,7 @@
              If you prefer a static side-by-side figure, remove this block and use an <img> instead. -->
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/[SIM_FRAME].jpg"
+            <img src="./static/images/policy_decision_pipeline_v5.png"
                  class="interpolation-image"
                  alt="Simulated environment frame."/>
             <p>Simulation</p>
@@ -369,7 +368,7 @@
                    step="1" min="0" max="100" value="0" type="range">
           </div>
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/[HARDWARE_FRAME].jpg"
+            <img src="./static/images/rsr_framework_overview_v7.jpg"
                  class="interpolation-image"
                  alt="Hardware deployment frame."/>
             <p class="is-bold">Hardware</p>
@@ -396,7 +395,7 @@
                  preload
                  playsinline
                  width="75%">
-            <source src="./static/videos/[HARDWARE_DEMO_VIDEO].mp4"
+            <source src="./static/videos/robo_demonstration.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -419,25 +418,22 @@
           </p>
           <p>
             <!-- RELATED WORKS: Replace each href and title with an actual paper URL and name -->
-            <a href="[RELATED_URL_1]">[Related Work 1: Robust MARL / Sim-to-Real]</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/11128447">[Related Work 1: Robust MARL / Sim-to-Real]</a>
             introduces ideas related to our robust policy training formulation.
           </p>
           <p>
-            <a href="[RELATED_URL_2]">[Related Work 2]</a> and
-            <a href="[RELATED_URL_3]">[Related Work 3]</a>
+            <a href="https://arxiv.org/abs/2605.22597v1">[Related Work 2]</a> and
+            <a href="https://arxiv.org/abs/2509.22469v1">[Related Work 3]</a>
             both apply deformation-like or uncertainty-aware representations
             for sim-to-real transfer in multi-robot settings.
           </p>
           <p>
             Some works apply CBFs for safety in single-agent or decentralized settings, such as
-            <a href="[RELATED_URL_4]">[Related Work 4]</a>,
-            <a href="[RELATED_URL_5]">[Related Work 5]</a>, and
-            <a href="[RELATED_URL_6]">[Related Work 6]</a>.
-          </p>
-          <p>
-            For broader context, check out
-            <a href="[SURVEY_URL_1]">[Survey on Safe MARL]</a> and
-            <a href="[SURVEY_URL_2]">[Survey on Multi-Agent Autonomous Driving]</a>.
+            <a href="https://ieeexplore.ieee.org/abstract/document/11128447">[Related Work 4]</a>,
+            <a href="https://arxiv.org/abs/2103.12553">[Related Work 5]</a>.
+             However, our work is among the first to demonstrate a modular CBF safety shield
+             in a multi-agent setting with communication, and to show zero-shot transfer of
+             a CBF-shielded MARL policy to hardware.
           </p>
         </div>
       </div>
